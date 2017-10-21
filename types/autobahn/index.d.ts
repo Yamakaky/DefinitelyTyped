@@ -40,6 +40,8 @@ declare namespace autobahn {
         prefix(prefix: string, uri: string): void;
 
         resolve(curie: string): string;
+        
+        log(message: string): void;
 
         onjoin: (roleFeatures: any) => void;
         onleave: (reason: string, details: any) => void;
